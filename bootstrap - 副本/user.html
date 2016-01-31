@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detail Admin - My Info</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/elements.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+
+    <!-- libraries -->
+    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.css" />
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/personal-info.css" type="text/css" media="screen" />
+
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+
+    <!-- navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <a class="brand" href="index.html"><img src="img/logo.png" /></a>
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li ><a href="index.html">主页</a></li>
+                    <li><a href="user.html">个人信息</a></li>
+                    <li  class="active"><a href="picture.html">闲事搜索</a></li>
+                    <li><a href="signin.html">登陆</a></li>
+                    <li><a href="signup.html">注册</a></li>
+                </ul>
+            </div>
+            <ul class="nav pull-right">
+                <li class="hidden-phone">
+                    <input class="search" type="text" />
+            </li>
+                          <li class="notification-dropdown hidden-phone">
+                    <a href="#" class="trigger">
+                        <i class="icon-warning-sign"></i>
+                        <span class="count">8</span>
+                    </a>
+             </li> 
+              <div class="pop-dialog">
+                        <div class="pointer right">
+                            <div class="arrow"></div>
+                            <div class="arrow_border"></div>
+                        </div>
+                        <div class="body">
+                            <a href="#" class="close-icon"><i class="icon-remove-sign"></i></a>
+                            <div class="notifications">
+                                <h3>You have 6 new notifications</h3>
+                                <a href="#" class="item">
+                                    <i class="icon-signin"></i> New user registration
+                                    <span class="time"><i class="icon-time"></i> 13 min.</span>
+                                </a>
+                                <a href="#" class="item">
+                                    <i class="icon-signin"></i> New user registration
+                                    <span class="time"><i class="icon-time"></i> 18 min.</span>
+                                </a>
+                                <a href="#" class="item">
+                                    <i class="icon-envelope-alt"></i> New message from Alejandra
+                                    <span class="time"><i class="icon-time"></i> 28 min.</span>
+                                </a>
+                                <a href="#" class="item">
+                                    <i class="icon-signin"></i> New user registration
+                                    <span class="time"><i class="icon-time"></i> 49 min.</span>
+                                </a>
+                                <a href="#" class="item">
+                                    <i class="icon-download-alt"></i> New order placed
+                                    <span class="time"><i class="icon-time"></i> 1 day.</span>
+                                </a>
+                                <div class="footer">
+                                    <a href="#" class="logout">View all notifications</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+              <li class="dropdown">
+                    <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
+                        Your account
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="user.html">Personal info</a></li>
+                        <li><a href="#">Account settings</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Export your data</a></li>
+                        <li><a href="#">Send feedback</a></li>
+                    </ul>   
+             </li>       
+              <li class="settings hidden-phone">
+                    <a href="user.html" role="button">
+                        <i class="icon-cog"></i>
+                    </a>
+                </li>
+                <li class="settings hidden-phone">
+                    <a href="signin.html" role="button">
+                        <i class="icon-share-alt"></i>
+                    </a>
+                </li>        
+            </ul>
+        </div>
+    </div>    
+    <!-- end navbar -->
+
+	<!-- main container .wide-content is used for this layout without sidebar :)  -->
+    <div class="content wide-content">
+        <div class="container-fluid">
+            <div class="settings-wrapper" id="pad-wrapper">
+                <!-- avatar column -->
+                <div class="span2 avatar-box">
+                    <div class="personal-image">
+                        <img src="img/personal-info.png" class="avatar img-circle" />
+                        <p>请上传你的头像</p>
+                        
+                        <input type="file" />
+                    </div>
+                </div>
+
+                <!-- edit form column -->
+                <div class="span7 personal-info">
+                    <div class="alert alert-info">
+                        <i class="icon-lightbulb"></i>
+                         <strong>请完善好你的个人信息</strong> 
+                    </div>
+                    <h5 class="personal-title">个人信息列表</h5>
+
+                    <form />
+                        <div class="field-box">
+                            <label>姓        名:</label>
+                            <input class="span5 inline-input" type="text" value="Alejandra" name="name" />
+                        </div>
+                        <div class="field-box">
+                            <label>年   龄:</label>
+                            <input class="span5 inline-input" type="text" value="22"  name="age" />
+                        </div>
+                        <div class="field-box">
+                            <label>电话:</label>
+                            <input class="span5 inline-input" type="text" value="18883287643" name="tel" />
+                        </div>
+                        <div class="field-box">
+                            <label>邮件:</label>
+                            <input class="span5 inline-input" type="text" value="alejandra@design.com" name="email" />
+                        </div>
+                        <div class="field-box">
+                            <label>地区:</label>                            
+                                 <input class="span5 inline-input" type="text" value="重庆南岸区" name="adds" />
+                        </div>
+                        <div class="span6 field-box actions">
+                            <input type="button" class="btn-glow primary" value="保存修改" />
+                            <span>OR</span>
+                            <input type="reset" value="重置" class="reset" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+
+
+	<!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

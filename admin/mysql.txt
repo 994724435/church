@@ -1,0 +1,96 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.2.1
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost
+-- 服务器版本: 5.0.45
+-- PHP 版本: 5.2.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- 数据库: `bl_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(20) NOT NULL auto_increment,
+  `username` varchar(100) character set gbk NOT NULL,
+  `pwd` varchar(200) character set gbk NOT NULL,
+  `list` varchar(10) character set gbk NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=koi8u AUTO_INCREMENT=3 ;
+
+--
+-- 导出表中的数据 `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `pwd`, `list`) VALUES
+(1, 'admin', '202cb962ac59075b964b07152d234b70', '管理员'),
+(2, '123', '202cb962ac59075b964b07152d234b70', '管理员');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `chengji`
+--
+
+CREATE TABLE `chengji` (
+  `id` int(100) NOT NULL auto_increment,
+  `xh` varchar(50) NOT NULL,
+  `yy` varchar(20) NOT NULL,
+  `c` varchar(20) NOT NULL,
+  `wl` varchar(20) NOT NULL,
+  `gs` varchar(10) NOT NULL,
+  `jd` varchar(40) NOT NULL,
+  `ly` varchar(20) NOT NULL,
+  `dy` varchar(20) NOT NULL,
+  `sw` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+
+--
+-- 导出表中的数据 `chengji`
+--
+
+INSERT INTO `chengji` (`id`, `xh`, `yy`, `c`, `wl`, `gs`, `jd`, `ly`, `dy`, `sw`) VALUES
+(1, '200730812045', '87', '87', '65', '74', '56', '68', '98', '99'),
+(2, '200730812010', '90', '45', '56', '60', '78', '89', '87', '87'),
+(3, '200730812011', '85', '62', '65', '65', '64', '64', '65', '55'),
+(4, '200730812012', '66', '56', '65', '62', '64', '65', '65', '64'),
+(5, '200730812013', '64', '45', '87', '55', '56', '64', '64', '64'),
+(6, '200730812014', '63', '65', '65', '65', '64', '64', '68', '64'),
+(7, '200730812015', '69', '78', '90', '65', '91', '56', '68', '99'),
+(8, '200730812016', '65', '65', '45', '87', '95', '64', '65', '65');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(10) NOT NULL auto_increment,
+  `xh` varchar(20) default NULL,
+  `username` varchar(20) character set gbk default NULL,
+  `pwd` varchar(200) character set gbk default NULL,
+  `bj` varchar(50) character set gbk default NULL,
+  `jg` varchar(50) character set gbk default NULL,
+  `sfzh` varchar(50) character set gbk default NULL,
+  `csly` varchar(50) character set gbk default NULL,
+  `zymc` text character set gbk,
+  `addss` text character set gbk,
+  `tel` varchar(50) default NULL,
+  `sex` varchar(10) character set gbk default NULL,
+  `list` varchar(20) character set gbk default NULL,
+  `mz` varchar(20) character set gbk default NULL,
+  `xb` varchar(20) character set gbk default NULL,
+  `lb` varchar(20) character set gbk default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gb2312 AUTO_INCREMENT=9 ;
+
